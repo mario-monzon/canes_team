@@ -1,5 +1,5 @@
+import 'package:canes_team/design/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:my_flutter_screen/design/app_colors.dart';
 
 class GradientBack extends StatelessWidget {
   String title = "Popular";

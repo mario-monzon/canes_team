@@ -1,3 +1,4 @@
+import 'package:canes_team/widget/event/event_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class FanEvent extends StatelessWidget {
@@ -6,7 +7,22 @@ class FanEvent extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          child: Text('Event Screen'),
+          child: ListView(
+            children: [
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+              EventCard(),
+            ],
+          ),
         ),
       ),
     );

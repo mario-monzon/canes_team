@@ -1,5 +1,5 @@
+import 'package:canes_team/design/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:my_flutter_screen/design/app_colors.dart';
 
 class ButtonYellow extends StatefulWidget {
   double height = 0.0;
@@ -31,8 +31,8 @@ class _ButtonYellowState extends State<ButtonYellow> {
           borderRadius: BorderRadius.circular(5.0),
           gradient: LinearGradient(
               colors: [
-                AppColors.amberCanes,
-                Colors.amber,
+                AppColors.darkGrey,
+                Colors.black87,
               ],
               begin: FractionalOffset(0.2, 0.0),
               end: FractionalOffset(1.0, 0.6),
@@ -45,7 +45,7 @@ class _ButtonYellowState extends State<ButtonYellow> {
             style: TextStyle(
               fontSize: 18.0,
               fontFamily: "Lato",
-              color: AppColors.darkGrey,
+              color: AppColors.amberCanes,
             ),
           ),
         ),

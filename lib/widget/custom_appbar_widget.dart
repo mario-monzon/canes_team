@@ -1,9 +1,9 @@
+import 'package:canes_team/fan/bloc/fan_bloc.dart';
+import 'package:canes_team/fan/model/fan_model.dart';
+import 'package:canes_team/widget/pop_options_widget.dart';
+import 'package:canes_team/widget/user_avatar_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
-import 'package:my_flutter_screen/fan/bloc/fan_bloc.dart';
-import 'package:my_flutter_screen/fan/model/fan_model.dart';
-import 'package:my_flutter_screen/widget/pop_options_widget.dart';
-import 'package:my_flutter_screen/widget/user_avatar_widget.dart';
 
 class CustomAppBar extends StatelessWidget {
   FanBloc fanBloc;
@@ -41,18 +41,18 @@ class CustomAppBar extends StatelessWidget {
               fontSize: 30.0),
         );
 
-
-    return AppBar(
-      leading: UserAvatar(fan),
-      actions: [
-        PopOptions(),
-      ],
-      backgroundColor: Colors.amber,
-      title: Text(
-        fan.name,
-        style: TextStyle(color: Colors.black),
-      ),
-    );
+        return AppBar(
+          leading: UserAvatar(fan),
+          actions: [
+            PopOptions(),
+          ],
+          backgroundColor: Colors.amber,
+          title: Text(
+            fan.name,
+            style: TextStyle(color: Colors.black),
+          ),
+        );
+      }
+    }
   }
 }
-

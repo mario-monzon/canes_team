@@ -11,4 +11,6 @@ class Img {
   static const String facebook = 'assets/images/facebook.svg';
   static const String instagram = 'assets/images/instagram.svg';
   static const String twitter = 'assets/images/twitter.svg';
+  static const String noAvatar = 'assets/images/no_avatar.jpg';
+  static const String team01 = 'assets/images/team01.jpg';
 }

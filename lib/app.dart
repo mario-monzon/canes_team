@@ -1,5 +1,5 @@
+import 'package:canes_team/fan/ui/screen/fan_home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:my_flutter_screen/fan/ui/screen/fan_home_screen.dart';
 
 class App extends StatefulWidget {
   @override
@@ -12,6 +12,12 @@ class _AppState extends State<App> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
+      initialRoute: 'home',
+      routes: {
+        // 'sigin': (BuildContext context) => SignInScreen(),
+        'home': (BuildContext context) => FanHome(),
+        // 'card': (BuildContext context) => CustomCard(),
+      },
       home: FanHome(),
     );
   }

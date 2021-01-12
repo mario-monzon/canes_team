@@ -1,5 +1,6 @@
+import 'package:canes_team/design/img.dart';
+import 'package:canes_team/fan/model/fan_model.dart';
 import 'package:flutter/material.dart';
-import 'package:my_flutter_screen/fan/model/fan_model.dart';
 
 class UserAvatar extends StatelessWidget {
   Fan fan;
@@ -10,7 +11,10 @@ class UserAvatar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: CircleAvatar(
-        backgroundImage: NetworkImage(fan.photoUrl),
+        backgroundImage: AssetImage(Img.noAvatar),
+        // backgroundImage: fan.photoUrl != null
+        //     ? NetworkImage(fan.photoUrl)
+        //     : AssetImage('assets/images/no_avatar.jpg'),
         backgroundColor: Colors.black,
       ),
     );

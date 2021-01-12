@@ -1,3 +1,4 @@
+import 'package:canes_team/fan/model/fan_model.dart';
 import 'package:canes_team/fan/ui/screen/fan_contact_screen.dart';
 import 'package:canes_team/fan/ui/screen/fan_event_screen.dart';
 import 'package:canes_team/fan/ui/screen/fan_news_screen.dart';
@@ -9,6 +10,7 @@ import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 
 class FanHome extends StatefulWidget {
+  Fan fan;
   @override
   _FanHomeState createState() => _FanHomeState();
 }
@@ -36,7 +38,7 @@ class _FanHomeState extends State<FanHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: UserAvatar(''),
+        leading: UserAvatar(widget.fan),
         actions: [
           PopOptions(),
         ],

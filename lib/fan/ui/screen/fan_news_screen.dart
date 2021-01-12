@@ -1,3 +1,4 @@
+import 'package:canes_team/widget/news/news_card_widget.dart';
 import 'package:flutter/material.dart';
 
 class FanNews extends StatelessWidget {
@@ -6,7 +7,22 @@ class FanNews extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          child: Text('News Screen'),
+          child: ListView(
+            children: [
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+              NewsCard(),
+            ],
+          ),
         ),
       ),
     );
